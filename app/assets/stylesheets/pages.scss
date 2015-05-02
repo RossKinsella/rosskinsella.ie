@@ -1,0 +1,292 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+$primary-color: #333;
+
+body{
+	background: #eee;
+  width: 100vw;
+  height: 100vh;
+}
+
+a {
+	color: #ffab40;
+}
+
+.center-row {
+	
+ 
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+	 -webkit-justify-content: center;
+	 justify-content: center;
+
+}
+
+.card-title {
+	font-weight: 900 !important;
+}
+
+header, main, footer {
+  padding-left: 240px;
+}
+
+nav {
+	span {
+		margin-left: 300px;
+		font-size: 22px;
+	}
+}
+
+nav{
+	background-color: $primary-color;
+}
+
+#slide-out{
+	li{
+		padding: 0px;
+	}
+}
+
+.content-section
+{
+  -mox-box-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  -webkit-flex: 1 0 auto;
+  flex: 1 0 auto;
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  box-sizing: border-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  position: relative;
+  min-height: 100%;
+  z-index: 2;
+  max-width: calc(100% - 240px);
+  margin-left: 240px;
+
+	p {
+			padding: 10px 20px;
+	}
+
+		.contact{
+			display: -webkit-box;
+		   display: -moz-box;
+		   display: -ms-flexbox;
+		   display: -webkit-flex;
+		   display: flex;
+		   -webkit-box-direction: normal;
+		   -moz-box-direction: normal;
+		   -webkit-box-orient: horizontal;
+		   -moz-box-orient: horizontal;
+		   -webkit-flex-direction: row;
+		   -ms-flex-direction: row;
+		   flex-direction: row;
+		   -webkit-flex-wrap: nowrap;
+		   -ms-flex-wrap: nowrap;
+		   flex-wrap: nowrap;
+		   -webkit-box-pack: center;
+		   -moz-box-pack: center;
+		   -webkit-justify-content: flex-start;
+		   -ms-flex-pack: center;
+		   justify-content: flex-start;
+		   -webkit-align-content: stretch;
+		   -ms-flex-line-pack: stretch;
+		   align-content: stretch;
+		   -webkit-box-align: center;
+		   -moz-box-align: center;
+		   -webkit-align-items: center;
+		   -ms-flex-align: center;
+		   align-items: center;
+		   
+		   margin: 20px;
+
+		   img {
+		   	margin-right: 15px;
+		   }
+		 }
+
+  .small_image {
+  	width: 40px;
+  	height: 40px;
+  }
+	
+	.header
+	{
+	  box-shadow: 0 2px 4px rgba(0,0,0,.2);
+	  padding-top: 100px;
+	  max-height: 250px;
+	  min-height: 250px;
+	  width: 100%;
+	  padding-left: 50px;
+	  background-color: $primary-color;
+	  color: white;
+	}
+
+}
+
+@media only screen and (max-width : 992px) {
+  header, main, footer {
+    padding-left: 0;
+  }
+
+	.nav-title {
+		position: absolute;
+		width: 100px;
+		margin-left: calc(50% - 50px);
+	}
+
+  nav {
+		span {
+			margin-left: 0px;
+			font-size: 16px;
+			text-align: center;
+		}
+	}
+
+	.content-section
+	{
+		.header
+		{
+			padding-top: 50px;
+		  max-height: 150px;
+		  min-height: 150px;
+		}
+		h1{
+			font-size: 32px;
+		}
+		margin-left: 0px;
+		max-width: 100%;
+		min-height: 250px !important;
+		height: 100% !important;
+	}
+}
+
+.experience-header{
+	img{
+		width: 100px;
+	}
+
+}
+
+
+
+.card-image
+{
+	height: 200px;
+	overflow: hidden;
+}
+
+
+
+.mad-skills{
+    margin: 20px;
+}
+
+.skillbar {
+    position:relative;
+    display:block;
+    margin-bottom:15px;
+    width: 100%;
+    background:#eee;
+    height:35px;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    -webkit-transition:0.4s linear;
+    -moz-transition:0.4s linear;
+    -ms-transition:0.4s linear;
+    -o-transition:0.4s linear;
+    transition:0.4s linear;
+    -webkit-transition-property:width, background-color;
+    -moz-transition-property:width, background-color;
+    -ms-transition-property:width, background-color;
+    -o-transition-property:width, background-color;
+    transition-property:width, background-color;
+}
+
+.skillbar-title {
+    position:absolute;
+    top:0;
+    left:0;
+    width:220px;
+    font-weight:bold;
+    font-size: 2.5vmin;
+    color:#ffffff;
+    background:#6adcfa;
+    -webkit-border-top-left-radius:3px;
+    -webkit-border-bottom-left-radius:4px;
+    -moz-border-radius-topleft:3px;
+    -moz-border-radius-bottomleft:3px;
+    border-top-left-radius:3px;
+    border-bottom-left-radius:3px;
+}
+
+.skillbar-title span {
+    display:block;
+    background:rgba(0, 0, 0, 0.1);
+    padding:0 20px;
+    height:35px;
+    line-height:35px;
+    -webkit-border-top-left-radius:3px;
+    -webkit-border-bottom-left-radius:3px;
+    -moz-border-radius-topleft:3px;
+    -moz-border-radius-bottomleft:3px;
+    border-top-left-radius:3px;
+    border-bottom-left-radius:3px;
+}
+
+.skillbar-bar-wrapper {
+    margin-left: 215px;
+    width: calc(100% - 215px);
+}
+
+.skillbar-bar {
+    height:35px;
+    width:0px;
+    background:#6adcfa;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+}
+
+.skill-bar-percent {
+    position:absolute;
+    right:10px;
+    top:0;
+    font-size:2.5vmin;
+    height:35px;
+    line-height:35px;
+    color:#ffffff;
+    color:rgba(0, 0, 0, 0.4);
+}
+
+@media only screen and (max-width : 992px) {
+.skillbar-title {
+	width: 100px;
+}
+.skillbar-bar-wrapper
+{
+    margin-left: 99px;
+    width: calc(100% - 99px);
+}
+.skillbar-bar
+{
+	height: 25px;
+}
+.skillbar-title span
+{
+	height: 25px;
+	line-height: 25px;
+}
+.skill-bar-percent{
+	height: 25px;
+	line-height: 25px;
+}
+.skillbar{
+	margin-bottom: 0px;
+}
+}
