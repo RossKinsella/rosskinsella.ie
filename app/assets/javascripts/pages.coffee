@@ -13,7 +13,10 @@ $ ->
 
 	$("#slide-out").on 'click', ->
 		if window.matchMedia( "(max-width : 992px)" ).matches
-			$('#sidenav-overlay').click()
+			setTimeout (->
+				$('#sidenav-overlay').click()
+				return
+			), 350
 			return
 		return
 	return
