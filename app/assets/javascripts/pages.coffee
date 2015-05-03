@@ -3,9 +3,7 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
 #// Initialize collapse button
-$ ->
-	is_mobile = screen.width < 992 ? true : false
-
+$ ->	
 	$(".button-collapse").sideNav()
 	$('ul.tabs').tabs()
 	$('#slide-out').pushpin()
@@ -14,7 +12,7 @@ $ ->
 	  return
 
 	$("#slide-out").on 'click', ->
-		if is_mobile
+		if window.matchMedia( "(max-width : 992px)" ).matches
 			$('#sidenav-overlay').click()
 			return
 		return
