@@ -6,6 +6,7 @@ $primary-color: #333;
 body{
 	background: #eee;
   width: 100vw;
+  max-width: 100%;
   height: 100vh;
 }
 
@@ -171,7 +172,9 @@ nav{
 
 }
 
-
+.project-card-wrapper {
+  width: 500px;
+}
 
 .card-image
 {

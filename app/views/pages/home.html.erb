@@ -1,56 +1,84 @@
 <nav id = "home">
-	<div class="nav-title">
-		<span>Ross Kinsella</span>
-	</div>
- 	<ul id="slide-out" class="side-nav fixed">
- 		<li><a id ="test" href="#home" class="waves-effect waves-red"> Home</a></li>
+  <div class="nav-title">
+    <span>Ross Kinsella</span>
+  </div>
+   <ul id="slide-out" class="side-nav fixed">
+     <li><a id ="test" href="#home" class="waves-effect waves-red"> Home</a></li>
     <li><a href="#experience" class="waves-effect waves-red">Experience</a></li>
     <li><a href="#projects" class="waves-effect waves-red">Projects</a></li>
-    <li><a href="#skills" class="waves-effect waves-red">Skills</a></li>
   </ul>
   <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
 </nav>
-<div class="content-section" >
-	<p>
-		Hi there, I am a full stack web developer with a passion for making things.
-	</p>
-	<p>
-		Currently, I am studying Computer Science &amp; Business in Trinity College Dublin.<br> I expect to graduate in 2016 with a 1.1.<br>
-	</p>
+<div class="content-section">
+  <p>
+    Hi there, I am a full stack web developer with a passion for making things.
+  </p>
+  <p>
+    Currently, I am studying Computer Science &amp; Business in Trinity College Dublin.<br> I expect to graduate in 2016 with a 1.1.
+  </p>
+  <p>
+    After my exams this summer, I will be joining HubSpot to work on an exciting new product called <a href="http://leadin.com/">LeadIn</a>.
+  </p>
+  <p>
+    Outside of college I am a hobby game developer and I'm leading a small team working on a Mount &amp; Blade inspired kingdom building simulator.
+  </p>
+    <div class="contact">
+      <%= image_tag "email19", :class => 'small_image'%> <a href="mailto:ross.kinsella.ie@gmail.com?Subject=Introduction: " target="_top">ross.kinsella.ie@gmail.com</a>  
+    </div>
 
-	<p>
-		After my exams this summer, I will be joining HubSpot to work on an exciting new product called <a href="http://leadin.com/">LeadIn</a>.
-	</p>
-	<p>
-		Outside of college I am a hobby game developer and I'm leading a small team working on a Mount &amp; Blade inspired kingdom building simulator.
-	</p>
-	
-		<div class="contact">
-			<%= image_tag "email19", :class => 'small_image'%> <a href="mailto:ross.kinsella.ie@gmail.com?Subject=Introduction: " target="_top">ross.kinsella.ie@gmail.com</a>	
-		</div>
-
-		<div class="contact">
-			<%= image_tag "house158", :class => 'small_image' %> Dublin, Ireland
-		</div>
-		
+    <div class="contact">
+      <%= image_tag "house158", :class => 'small_image' %> Dublin, Ireland
+    </div>
 </div>
-<div id = "experience" class="content-section">
-	<div class="header">
-		<h1>Experience</h1>
-	</div>
-	<div class="experience-section">
 
- 			<div class="row center-row">
+<!-- Experience -->
+<div id = "experience" class="content-section">
+  <div class="header">
+    <h1>Experience</h1>
+  </div>
+  <div class="experience-section">
+
+      <div class="row center-row">
+        <div class="col s12 m6">
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">HubSpot - Software Engineering Internship</span>
+              <p class="less-gutter">
+                June 2015 - September 2015
+              </p>
+              <p>
+                I interned with the team behind <a href="http://leadin.com/">Leadin</a>, a new B2B product.
+              </p>
+              <p>
+                I took ownership of client side form capture, built a weekly account performance digest email and contributed towards the team's goal of a version of the product for non-wordpress users.
+              </p>
+              <p>
+                Java 8, <a href="http://www.dropwizard.io/">Dropwizard</a>, <a href="https://github.com/google/guice">Guice</a>, <a href="https://github.com/google/guava">Guava</a>, <a href="http://coffeescript.org/">CoffeeScript</a>, <a href="http://backbonejs.org/">Backbone.js</a>, <a href="http://facebook.github.io/react/">React</a>, <a href="http://jade-lang.com/">Jade</a>, Git.
+              </p>
+            </div>
+            <div class="card-action">
+              <a href="http://leadin.com">leadin.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row center-row">
         <div class="col s12 m6">
           <div class="card blue-grey darken-1">
             <div class="card-content white-text">
               <span class="card-title">Hive - Rails Contracting</span>
               <p class="less-gutter">
-              	August 2014 - Present
+                August 2014 - March 2014
               </p>
-              <p>I joined this Trinity based start up just prior to their initial launch.
-              	 <br><br>
-								 Initially I was responsible for resolving various issues as they arose and later went on to implement some new features, such as Facebook integration and analytics.
+              <p>
+                I joined this Trinity based start up just prior to their initial launch.
+              </p>
+              <p>
+                 Initially I was responsible for resolving various issues as they arose and later went on to implement some new features, such as Facebook integration and analytics.
+              </p>
+              <p>
+                Rails, Postgresql, <a href="http://coffeescript.org/">CoffeeScript</a>, <a href="http://slim-lang.com/">Slim</a>, Git.
               </p>
             </div>
             <div class="card-action">
@@ -60,17 +88,22 @@
         </div>
       </div>
 
- 			<div class="row center-row">
+       <div class="row center-row">
         <div class="col s12 m6">
           <div class="card blue-grey darken-1">
             <div class="card-content white-text">
               <span class="card-title">ITG - BI Internship</span>
               <p class="less-gutter">
-              	June 2014 - August 2014
+                June 2014 - August 2014
               </p>
-              <p>I have completed an internship programme offered by Investment Technology Group, an industry leading agency broker.
-              	 <br><br>
-								 While there, I created a variety of tools for use by senior management to gain insights into how the company is performing via the web browser.
+              <p>
+                I have completed an internship programme offered by Investment Technology Group, an industry leading agency broker.
+              </p>
+              <p>
+                 While there, I created a variety of tools for use by senior management to gain insights into how the company is performing via the web browser.
+              </p>
+              <p>
+                ASP.net, HTML, JS, CSS.
               </p>
             </div>
             <div class="card-action">
@@ -80,13 +113,13 @@
         </div>
       </div>
 
- 			<div class="row center-row">
+       <div class="row center-row">
         <div class="col s12 m6">
           <div class="card blue-grey darken-1">
             <div class="card-content white-text">
               <span class="card-title">Receptionist</span>
               <p class="less-gutter">
-              	September 2010 - June 2014
+                September 2010 - June 2014
               </p>
               <p>Client facing position in the health care sector.
               </p>
@@ -98,134 +131,56 @@
         </div>
       </div>
 
-	</div>
+  </div>
 </div>
+
+<!-- Projects -->
 <div id = "projects" class="content-section">
-	<div class="header">
-		<h1>Projects</h1>
-	</div>
-	
-
-      <div class="row center-row">
-        <div class="col s12 m7">
-          <div class="card">
-            <div class="card-image">
-              <%= image_tag "baffle" %>
-            </div>
-            <div class="card-content">
-            	<h4>Baffle</h4>
-              <p>I made a robot which tricks heteorsexual men to match with eachother on Tinder. <br><br>
-
-I created a fake Tinder account of a pretty girl and automatically had it match with men and create a 'proxy-match' between two men, swapping their messages with each other.</p>
-            </div>
-            <div class="card-action">
-              <a href="http://baffle.co">Baffle.co</a>
-            </div>
-          </div>
+  <div class="header">
+    <h1>Projects</h1>
+  </div>
+  
+  <div class="row center-row">
+    <div class="project-card-wrapper">
+      <div class="card">
+        <div class="card-image">
+          <%= image_tag "baffle" %>
+        </div>
+        <div class="card-content">
+          <h4>Baffle</h4>
+          <p>
+            I made a robot which tricks heteorsexual men to match with eachother on Tinder.
+          </p>
+          <p>
+            I exposed the conversations, after sensitive information was filtered out, in the attempt of generating referal income for a Tinder related book.
+          </p>
+          <p>
+            I created a fake Tinder account of a pretty girl and automatically had it match with men and create a 'proxy-match' between two men, swapping their messages with each other.
+          </p>
+        </div>
+        <div class="card-action">
+          <a href="http://baffle.co">Baffle.co</a>
         </div>
       </div>
+    </div>
+  </div>
 
-      <div class="row center-row">
-        <div class="col s12 m7">
-          <div class="card">
-            <div class="card-image">
-              <%= image_tag "colorbook" %>
-            </div>
-            <div class="card-content">
-            	<h4>ColorBook</h4>
-              <p>I downloaded my Facebook data and represented every message I have ever sent or recieved. <br><br></p>
-            </div>
-            <div class="card-action">
-              <a href="http://color-book.rosskinsella.ie">color-book.rosskinsella.ie</a>
-            </div>
-          </div>
+  <div class="row center-row">
+    <div class="project-card-wrapper">
+      <div class="card">
+        <div class="card-image">
+          <%= image_tag "colorbook" %>
+        </div>
+        <div class="card-content">
+          <h4>ColorBook</h4>
+          <p>
+            I downloaded my Facebook data and represented every message I have ever sent or recieved. 
+          </p>
+        </div>
+        <div class="card-action">
+          <a href="http://color-book.rosskinsella.ie">color-book.rosskinsella.ie</a>
         </div>
       </div>
-            
-
+    </div>
+  </div>
 </div>
-<div id = "skills" class="content-section">
-	<div class="header">
-		<h1>Skills</h1>
-	</div>
-    <section class="mad-skills">
-      <div class="skillbar clearfix " data-percent="80%">
-        <div class="skillbar-title" style="background: #b62525;"><span>Ruby on Rails</span></div>
-        <div class="skillbar-bar-wrapper">
-          <div class="skillbar-bar" style="background: #d62d2d;"></div>
-        </div>
-        <div class="skill-bar-percent">80%</div>
-      </div> <!-- End Skill Bar -->
-
-      <div class="skillbar clearfix " data-percent="60%">
-        <div class="skillbar-title" style="background: #333333;"><span>PostgreSQL</span></div>
-        <div class="skillbar-bar-wrapper">
-          <div class="skillbar-bar" style="background: #525252;"></div>
-        </div>
-        <div class="skill-bar-percent">60%</div>
-      </div> <!-- End Skill Bar -->
-
-      <div class="skillbar clearfix " data-percent="65%">
-        <div class="skillbar-title" style="background: #2980b9;"><span>SCSS</span></div>
-        <div class="skillbar-bar-wrapper">
-          <div class="skillbar-bar" style="background: #3498db;"></div>
-        </div>
-        <div class="skill-bar-percent">65%</div>
-      </div> <!-- End Skill Bar -->
-
-      <div class="skillbar clearfix " data-percent="50%">
-        <div class="skillbar-title" style="background: #2c3e50;"><span>CoffeeScript</span></div>
-        <div class="skillbar-bar-wrapper">
-          <div class="skillbar-bar" style="background: #2c3e50;"></div>
-        </div>
-        <div class="skill-bar-percent">50%</div>
-      </div> <!-- End Skill Bar -->
-
-      <div class="skillbar clearfix " data-percent="80%">
-        <div class="skillbar-title" style="background: #46465e;"><span>HTML5</span></div>
-        <div class="skillbar-bar-wrapper">
-          <div class="skillbar-bar" style="background: #5a68a5;"></div>
-        </div>
-        <div class="skill-bar-percent">80%</div>
-      </div> <!-- End Skill Bar -->
-
-      <div class="skillbar clearfix " data-percent="65%">
-        <div class="skillbar-title" style="background: #333333;"><span>Git</span></div>
-        <div class="skillbar-bar-wrapper">
-          <div class="skillbar-bar" style="background: #525252;"></div>
-        </div>
-        <div class="skill-bar-percent">65%</div>
-      </div> <!-- End Skill Bar -->
-
-      <div class="skillbar clearfix " data-percent="60%">
-        <div class="skillbar-title" style="background: #27ae60;"><span>Unity Engine</span></div>
-        <div class="skillbar-bar-wrapper">
-          <div class="skillbar-bar" style="background: #2ecc71;"></div>
-        </div>
-        <div class="skill-bar-percent">60%</div>
-      </div> <!-- End Skill Bar -->
-
-      <div class="skillbar clearfix " data-percent="50%">
-        <div class="skillbar-title" style="background: #2980b9;"><span>Deployment</span></div>
-        <div class="skillbar-bar-wrapper">
-          <div class="skillbar-bar" style="background: #3498db;"></div>
-        </div>
-        <div class="skill-bar-percent">50%</div>
-      </div> <!-- End Skill Bar -->
-
-      <div class="skillbar clearfix " data-percent="70%">
-        <div class="skillbar-title" style="background: #2c3e50;"><span>Planetside 2</span></div>
-        <div class="skillbar-bar-wrapper">
-          <div class="skillbar-bar" style="background: #2c3e50;"></div>
-        </div>
-        <div class="skill-bar-percent">70%</div>
-      </div> <!-- End Skill Bar -->
-
-      <div class="skillbar clearfix " data-percent="60%">
-        <div class="skillbar-title" style="background: #46465e;"><span>Deadlifts</span></div>
-        <div class="skillbar-bar-wrapper">
-          <div class="skillbar-bar" style="background: #5a68a5;"></div>
-        </div>
-        <div class="skill-bar-percent">60%</div>
-      </div> <!-- End Skill Bar -->
-    </section>
